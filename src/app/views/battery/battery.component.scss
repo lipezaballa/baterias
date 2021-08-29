@@ -1,0 +1,30 @@
+.battery-wrapper {
+  background-color: blue;
+  width: min-content;
+
+  //Para que la información se quede a la derecha de la batería
+  display: flex;
+  flex-direction: row;
+
+  .image-wrapper {
+    position: relative; //Se defina en función del container
+    .filling {
+      position: absolute; //Para que esté por encima del otro dibujo
+      //display: none;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .information-wrapper {
+    display: flex; //Para que se expanda
+    flex-direction: column;
+
+    .table-wrapper {
+      flex-grow: 1;
+      background-color: red;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
